@@ -1,0 +1,158 @@
+body
+{
+  font-family: Dancing Script;
+  background-color:  #02010a;
+}
+.contenido
+{
+  width: 900px;
+  margin: 0 auto;
+  min-height: 200px;
+}
+img
+{
+  box-shadow: 2px 2px #02010a;
+}
+header{
+  background: #5b7989;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 0;
+  display: flex;
+  flex-flow: row wrap;
+  animation: slidein 1s;
+
+}
+#tituloCabecera{
+  width: 70%;
+  text-indent: 15px;
+  color: white;
+    text-shadow: 2px 2px #02010a;
+}
+#menuCabecera{
+  padding-top:25px;
+  width: 30%;
+  font-size: 15pt;
+  text-decoration: none;
+}
+#menuCabecera a{
+  color:white;
+}
+
+#menuCabecera .actual{
+  text-decoration: none;
+}
+
+.galeria
+{
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #d5c75f;
+
+}
+.galeria article[class*=paisaje]
+{
+  width: 80%;
+  background-color: #d5c75f;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+.paisaje img
+{
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+#imagen1
+{
+  -webkit-filter: blur(10px);
+}
+#imagen2, #imagen4, #imagen6
+{
+  -webkit-filter: grayscale(100%);
+}
+#imagen3
+{
+  -webkit-filter: sepia(90%);
+}
+footer
+{
+  background-color: #C6d5c5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#footer
+{
+  display: flex;
+  flex-direction: row;
+}
+#footer .contenedor
+{
+  text-align: left;
+  padding: 10px;
+  width: 25%;
+  background-color: #C6d5c5;
+}
+.columna
+{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.columna a
+{
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+.columna img
+{
+  list-style: none;
+  box-shadow: none !important
+}
+
+
+@media screen and (max-width:900px)
+{
+  .contenido{
+    width: 100%;
+    margin: 0 auto;
+  }
+  #menuCabecera, #tituloCabecera{
+ width: 100%;
+ text-align: center;
+}
+.galeria{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.paisaje img{
+  width: 100%;
+  margin: 0 auto;
+}
+
+#footer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+}
+
+@keyframes slidein {
+  0%{
+  margin-top: 150%;
+  }
+  60%{
+  margin-top: -5%;
+  }
+  100%{
+  margin-top: 0%;
+  }
+}
